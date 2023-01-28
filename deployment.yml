@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: springboot-postgresql
+  name: springboot-jenkins
   labels:
-    name: springboot-postgresql
+    name: springboot-jenkins
 spec:
   ports:
     - nodePort: 30163
@@ -11,27 +11,27 @@ spec:
       targetPort: 8080
       protocol: TCP
   selector:
-    app: springboot-postgresql
+    app: springboot-jenkins
   type: NodePort
 
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot-postgresql
+  name: springboot-jenkins
 spec:
   selector:
     matchLabels:
-      app: springboot-postgresql
+      app: springboot-jenkins
   replicas: 1
   template:
     metadata:
       labels:
-        app: springboot-postgresql
+        app: springboot-jenkins
     spec:
       containers:
-        - name: springboot-postgresql
-          image: metodij/springboot-postgresql:latest
+        - name: springboot-jenkins
+          image: metodij/springboot-jenkins:latest
           ports:
             - containerPort: 8080
           env:   # Setting Enviornmental Variables
