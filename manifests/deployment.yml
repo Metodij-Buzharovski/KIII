@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kubecluster-a238"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kubecluster-a238"
+  template:
+    metadata:
+      labels:
+        app: "kubecluster-a238"
+    spec:
+      containers:
+        - name: "kubecluster-a238"
+          image: "containerregirstry.azurecr.io/kubecluster"
+          ports:
+          - containerPort: 8080
