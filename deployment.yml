@@ -7,8 +7,8 @@ metadata:
 spec:
   ports:
     - nodePort: 30163
-      port: 9090
-      targetPort: 9090
+      port: 8080
+      targetPort: 8080
       protocol: TCP
   selector:
     app: springboot-jenkins
@@ -33,7 +33,7 @@ spec:
         - name: springboot-jenkins
           image: metodij/springboot-jenkins:latest
           ports:
-            - containerPort: 9090
+            - containerPort: 8080
           env:   # Setting Enviornmental Variables
             - name: DB_HOST   # Setting Database host address from configMap
               valueFrom:
