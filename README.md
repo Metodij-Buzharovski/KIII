@@ -1,6 +1,6 @@
-<h3 align="center"><b>Проектна задача по предметот "Континуирана интеграција и испорака"<br></h3>
+<br><h3 align="center"><b>Проектна задача по предметот "Континуирана интеграција и испорака"<br></h3>
 <h3 align="center">Employee Management System<br></h3>
-<br><br><br>
+<br><br>
 <h4>Вовед<br></b></h4>
 Проектот "Employee Management System" вклучуваше развој на веб-апликација за управување со вработени, проследено со нејзин deployment и на нејзината база на податоци на локален Minikube Kubernetes cluster, а потоа и на Microsoft Azure cloud-based Kubernetes cluster.<br><br>
 
