@@ -32,7 +32,7 @@ Kористејќи Docker Compose направив pull на image од DockerH
 секој пат кога ќе се направи commit на GitHub-от со помош на webhooks.<br><br>
 
 ![7](https://github.com/Metodij-Buzharovski/KIII/assets/81751906/e80ce246-ba17-4a46-bba6-e0b87216e0bc)<br><br>
-![8](https://github.com/Metodij-Buzharovski/KIII/assets/81751906/c280a4d6-8ace-4592-b144-28e9cf63255c)<br>
+![8](https://github.com/Metodij-Buzharovski/KIII/assets/81751906/04833d5c-a547-4059-b226-ffa8ed213d56)<br>
 <br><br><br>
 <h4>GitHub Webhook</h4>
 За повикување на Jenkins скриптата се користи GitHub Webhook, но бидејќи Jenkins е инсталиран на мојата локална машина, тој не е достапен за Webhook-от. За да се разреши овој проблем инсталирав програма наречена ngrok, којашто localhost го прави достапен за останатите компјутери на Интернет.<br><br>
